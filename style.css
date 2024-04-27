@@ -168,7 +168,6 @@ span {
     transform: scale(1.01);
     filter: drop-shadow(0 0 25px var(--main-color));
 }
-
 .home-content p {
     font-size: 1.8rem;
     font-weight: 500;
@@ -185,7 +184,7 @@ span {
     font-size: 2rem;
     border-radius: 50%;
     color: var(--main-color);
-    margin: 3rem 1.5 3rem 0;
+    margin: 3rem 1.5rem 3rem 0; /* adjusted margin */
     transition: 0.3s ease;
 }
 
@@ -201,7 +200,7 @@ span {
     padding: 1rem 2.8rem;
     background: var(--bg-color);
     border-radius: 4rem;
-    font-style: 1.6rem;
+    font-size: 1.6rem; /* corrected property */
     color: var(--main-color);
     border: 2px solid var(--main-color);
     letter-spacing: 0.1rem;
@@ -240,9 +239,10 @@ span {
     width: calc(100% + 8px);
     height: 100%;
     border-left: 3px solid var(--bg-color);
-    right: -8;
+    right: -8px; /* corrected value */
     animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 }
+
 
 @keyframes cursor {
     to {
@@ -384,7 +384,7 @@ span {
     color: var(--text-color);
     border-radius: 1rem;
     padding: 2rem;
-    width: 70%;
+    width: 100%;
     margin: auto;
     margin-top: 2rem;
 }
@@ -418,6 +418,9 @@ span {
     margin-top: 1rem;
 }
 
+.img-pic{
+    width:100%;
+}
 .skills .container .bar .info span {
     font-size: 2rem;
     font-weight: 500;
